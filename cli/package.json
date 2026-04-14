@@ -1,0 +1,9 @@
+{
+  "name": "promptforge-cli",
+  "version": "2.0.0",
+  "type": "module",
+  "bin": { "promptforge": "./index.js" },
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}

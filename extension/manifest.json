@@ -1,1 +1,18 @@
-{"manifest_version":3,"name":"PromptForge","version":"1.0","action":{"default_popup":"popup.html"}}
+{
+  "manifest_version": 3,
+  "name": "PromptForge AI",
+  "version": "2.0",
+  "description": "Optimize any AI prompt instantly — right-click any text to improve it with PromptForge AI",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PromptForge AI"
+  },
+  "permissions": ["activeTab", "scripting", "contextMenus", "clipboardWrite"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }]
+}
